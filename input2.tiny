@@ -1,0 +1,16 @@
+main
+var x;
+
+function fibonacci(n); {
+    if n <= 1 then
+        return n
+    fi;
+    return call fibonacci(n - 1) + call fibonacci(n - 2)
+};
+
+{
+    let x <- call InputNum;
+    let x <- call fibonacci(x);
+    call OutputNum(x);
+    call OutputNewLine
+}.
